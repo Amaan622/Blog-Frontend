@@ -1,10 +1,15 @@
+📚 Full Stack Blog Application (MERN)
+
 A modern full-stack blog application built using MongoDB, Express, React, and Node.js (MERN) with authentication, image upload, likes/dislikes, and user profiles.
+
 
 🚀 Live Demo
 🌐 Frontend (Vercel):
 https://blog-frontend-chi-neon.vercel.app
 🔗 Backend (Render):
 https://blog-53bs.onrender.com
+
+
 🧑‍💻 Tech Stack
 Frontend
 React (Vite)
@@ -12,6 +17,7 @@ Axios
 React Router
 Tailwind CSS
 React Icons
+
 Backend
 Node.js
 Express.js
@@ -19,10 +25,14 @@ MongoDB Atlas
 JWT Authentication
 Multer (file upload)
 CORS
+
+
+
 Deployment
 Frontend → Vercel
 Backend → Render
 Database → MongoDB Atlas
+
 📁 Project Structure
 Backend
 Blog-Backend/
@@ -33,6 +43,8 @@ Blog-Backend/
 │── uploads/
 │── .env
 │── package.json
+
+
 Frontend
 Blog-Frontend/
 │── src/
@@ -44,6 +56,10 @@ Blog-Frontend/
 │── vercel.json
 │── .env
 │── package.json
+
+
+
+
 ⚙️ Environment Variables
 Backend (.env)
 PORT=5001
@@ -54,8 +70,12 @@ AWS_ACCESS_KEY_ID=your_key
 AWS_SECRET_ACCESS_KEY=your_secret
 AWS_REGION=your_region
 AWS_BUCKET_NAME=your_bucket
+
+
 Frontend (.env)
 VITE_API_URL=https://blog-53bs.onrender.com
+
+
 🧪 Features
 🔐 User Authentication (Login/Register)
 📝 Create, Edit, Delete Blog Posts
@@ -64,28 +84,30 @@ VITE_API_URL=https://blog-53bs.onrender.com
 🖼 Image Upload Support
 📱 Responsive UI
 ⚡ Fast API Integration
+
+
 🛠️ Installation (Local Setup)
 1️⃣ Clone Repository
 Backend
 git clone https://github.com/Amaan622/Blog.git
 cd Blog
 npm install
+
 Frontend
 git clone https://github.com/Amaan622/Blog-Frontend.git
 cd Blog-Frontend
 npm install
+
+
+
 2️⃣ Run Backend
 npm start
 
-Backend runs on:
-
-http://localhost:5001
 3️⃣ Run Frontend
 npm run dev
 
-Frontend runs on:
 
-http://localhost:5173
+
 🌐 Deployment Guide
 Backend (Render)
 Push backend code to GitHub
@@ -97,6 +119,7 @@ Build Command:
 npm install
 Start Command:
 node server.js
+
 Frontend (Vercel)
 Push frontend code to GitHub
 Go to Vercel Dashboard
@@ -106,4 +129,22 @@ VITE_API_URL=https://your-backend-url.onrender.com
 Framework: Vite
 Output Directory:
 dist
+
+
 Deploy 🚀
+
+🔥 Author
+
+Md Amaan
+MERN Stack Developer
+
+📌 Notes
+Backend must be deployed first (Render)
+Then update frontend .env
+Then redeploy frontend (Vercel)
+Never push .env to GitHub
+
+
+
+
+
