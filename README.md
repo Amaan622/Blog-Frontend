@@ -1,50 +1,109 @@
-# 📝 Blog Website
+A modern full-stack blog application built using MongoDB, Express, React, and Node.js (MERN) with authentication, image upload, likes/dislikes, and user profiles.
 
-A fully responsive blog platform where users can explore posts, create their own blogs, like posts, and manage their content. Built using modern web technologies and hosted on AWS.
-
-## 🚀 Live Demo
-
-[Visit the Website](https://main.d1516rivwtp47g.amplifyapp.com/)
-
----
-
-## 🛠️ Tech Stack
-
-### Frontend
-- ⚛️ React.js
-- 🌐 HTML5, CSS3, JavaScript (ES6+)
-- 🎨 Tailwind CSS / Bootstrap (optional, depending on what you're using)
-- 🌍 AWS S3 (for static website hosting)
-
-### Backend *(Optional, if implemented)*
-- 🟢 Node.js + Express.js
-- 🗃️ MongoDB + Mongoose
-- 🔐 JWT Authentication
-- Multer
-
----
-
-## ✨ Features
-
-- ✅ User Authentication (JWT-based)
-- 📝 Create, Read, Update, and Delete (CRUD) Blogs
-- ❤️ Like, dislike Blog Posts
-- 🖼️ Upload & Manage Profile Pictures
-- 🔐 Delete blogs 
-- 📱 Fully Responsive UI
-
----
-
-## 📁 Project Structure
-
-```bash
-📦 blog-frontend
-├── public/
-├── src/
+🚀 Live Demo
+🌐 Frontend (Vercel):
+https://blog-frontend-chi-neon.vercel.app
+🔗 Backend (Render):
+https://blog-53bs.onrender.com
+🧑‍💻 Tech Stack
+Frontend
+React (Vite)
+Axios
+React Router
+Tailwind CSS
+React Icons
+Backend
+Node.js
+Express.js
+MongoDB Atlas
+JWT Authentication
+Multer (file upload)
+CORS
+Deployment
+Frontend → Vercel
+Backend → Render
+Database → MongoDB Atlas
+📁 Project Structure
+Backend
+Blog-Backend/
+│── server.js
+│── routes/
+│── models/
+│── middleware/
+│── uploads/
+│── .env
+│── package.json
+Frontend
+Blog-Frontend/
+│── src/
 │   ├── components/
 │   ├── pages/
-│   ├── utils/
-│   ├── App.js
-│   └── index.js
-├── .env
-└── package.json
+│   ├── App.jsx
+│── public/
+│── vite.config.js
+│── vercel.json
+│── .env
+│── package.json
+⚙️ Environment Variables
+Backend (.env)
+PORT=5001
+MONGO_URI=your_mongodb_connection
+JWT_SECRET=your_secret
+
+AWS_ACCESS_KEY_ID=your_key
+AWS_SECRET_ACCESS_KEY=your_secret
+AWS_REGION=your_region
+AWS_BUCKET_NAME=your_bucket
+Frontend (.env)
+VITE_API_URL=https://blog-53bs.onrender.com
+🧪 Features
+🔐 User Authentication (Login/Register)
+📝 Create, Edit, Delete Blog Posts
+❤️ Like / Dislike Posts
+👤 User Profile Page
+🖼 Image Upload Support
+📱 Responsive UI
+⚡ Fast API Integration
+🛠️ Installation (Local Setup)
+1️⃣ Clone Repository
+Backend
+git clone https://github.com/Amaan622/Blog.git
+cd Blog
+npm install
+Frontend
+git clone https://github.com/Amaan622/Blog-Frontend.git
+cd Blog-Frontend
+npm install
+2️⃣ Run Backend
+npm start
+
+Backend runs on:
+
+http://localhost:5001
+3️⃣ Run Frontend
+npm run dev
+
+Frontend runs on:
+
+http://localhost:5173
+🌐 Deployment Guide
+Backend (Render)
+Push backend code to GitHub
+Go to Render Dashboard
+Click New Web Service
+Connect GitHub repo
+Add environment variables
+Build Command:
+npm install
+Start Command:
+node server.js
+Frontend (Vercel)
+Push frontend code to GitHub
+Go to Vercel Dashboard
+Import GitHub repo
+Add Environment Variable:
+VITE_API_URL=https://your-backend-url.onrender.com
+Framework: Vite
+Output Directory:
+dist
+Deploy 🚀
